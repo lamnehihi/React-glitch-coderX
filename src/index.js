@@ -1,18 +1,10 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import "./index.css";
-import * as serviceWorker from "./serviceWorker";
-import Babel from "@babel/core";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import * as serviceWorker from './serviceWorker';
 
-const todos = ["Go to market", "Buy food", "Make dinner"];
-const lists = [];
-for (var todo of todos) {
-  let list = React.createElement("li", null, todo);
-  lists.push(list);
-}
-const App = React.createElement("ul", null, ...lists);
-const root = document.getElementById("root");
-ReactDOM.render(App, root);
+ReactDOM.render(<App />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

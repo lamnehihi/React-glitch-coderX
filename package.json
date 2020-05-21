@@ -3,16 +3,13 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "@babel/cli": "^7.8.4",
-    "@babel/core": "^7.9.6",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "^3.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "babel src -d lib",
-    "build-babel": "babel src -d lib",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
